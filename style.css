@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia Glaze', serif;
+}
+
+body {
+    color: #fff;
+    background: #000; /* Fallback for browsers that do not support gradients */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #7c144a;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #890c0c;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.3s;
+}
+
+.navbar a.active, .navbar a:hover {
+    color: #7c144a;
+}
+
+main {
+    min-height: 100vh;
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-btn, #restart-btn {
+    background-color: #080c09;
+    color: rgb(250, 246, 246);
+    font-style: oblique;
+    font-size: larger;
+}
+
+#start-btn:hover, #restart-btn:hover {
+    background-color: #d3d6da;
+}
+
+.answer-container {
+    position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.answer-btn {
+    font-size: larger;
+    margin-bottom: auto;
+    margin: 300;
+    padding: 10px;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: #e5ebf0;
+   
+}
+
+#next-btn {
+    background-color: #f1eaea;
+    color: white;
+    box-sizing: border-box;
+    size: 0.5cm;
+}
+
+#next-btn:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+    list-style: white;
+    font-size: larger;
+}
+
+
+
+.container.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+   
+    text-align: center;
+    font-size: xx-large;
+}
